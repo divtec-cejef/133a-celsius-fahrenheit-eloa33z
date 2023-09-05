@@ -1,18 +1,20 @@
 /**
  * Fichier de base pour application web HTML/CSS/JS
- * @author  Steve Fallet
- * @version 0.1
- * @since   2019-08-19
+ * @author  Elouan Kerouanton
+ * @version 0.2
+ * @since   2023-09-05
  */
 
 'use strict'; // Demande un interprétation stricte du code
-let a = 'Bonjour';
-console.log(a);
 
+let degre = '';
 
-let degrer = prompt('Temperature en celcius : ');
+do {
+    degre = parseInt(prompt('Temperature en °C : '));
 
-parseInt(degrer);
-
-if (!isNaN(degrer))
-    alert(`${degrer}°C = ${(degrer * 9 / 5) + 32}°F`);
+    if (isNaN(degre)) {
+        alert(`Donne un nombre`);
+    } else {
+        alert(`${degre}°C = ${(degre * 9 / 5) + 32}°F`);
+    }
+} while (isNaN(degre));
