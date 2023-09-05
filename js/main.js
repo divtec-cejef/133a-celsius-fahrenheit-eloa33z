@@ -9,8 +9,9 @@
 
 let degre = '';
 
+//redemande tant que l'utilisateur n'a pas donné un nombre
 do {
-    degre = parseInt(prompt('Temperature en °C : '));
+    degre = parseFloat(prompt('Temperature en °C : '));
 
     if (isNaN(degre)) {
         alert(`Donne un nombre`);
