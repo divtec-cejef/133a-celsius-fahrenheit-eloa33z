@@ -22,7 +22,7 @@ btConvertir.addEventListener('click', () => {
         } else {
             let calcule = (degre * 9 / 5) + 32;
             pReponce.innerHTML = `Résultat : ${calcule}°F`;
-            ulHistorique.innerHTML += '<li>' + calcule + '°F' + '</li>';
+            ulHistorique.innerHTML += '<li>' + `${degre}°C = ${calcule}°F` + '</li>';
         }
 });
 
