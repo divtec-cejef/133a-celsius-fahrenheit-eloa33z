@@ -20,8 +20,9 @@ btConvertir.addEventListener('click', () => {
         if (isNaN(degre)) {
             alert(`Donné un nombre`);
         } else {
-            pReponce.innerHTML = `Résultat : ${(degre * 9 / 5) + 32}°F`;
-            ulHistorique.innerHTML += '<li>' + `${degre}°C = ${(degre * 9 / 5) + 32}°F` + '</li>';
+            let calcule = (degre * 9 / 5) + 32;
+            pReponce.innerHTML = `Résultat : ${calcule}°F`;
+            ulHistorique.innerHTML += '<li>' + calcule + '°F' + '</li>';
         }
 });
 
